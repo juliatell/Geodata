@@ -1,0 +1,6 @@
+name: "Landkreise in Deutschland"
+navbar:
+  title: "My geodata project"
+  left:
+    - text: "Home"
+      href: index.html
