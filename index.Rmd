@@ -9,14 +9,25 @@ editor_options:
 
 
 ```{r}
-
 data <- readr::read_csv2(file = "data/landkreise-in-germany.CSV")
 
 data$`Id 0` <- as.integer(data$`Id 0`)
 data$`Id 1` <- as.integer(data$`Id 1`)
 data$`Id 2` <- as.integer(data$`Id 2`)
-
-
-
 ```
+
+
+##Plot
+
+
+
+```{r}
+library(ggplot2)
+g <- ggplot(data = data, mapping = aes(x ="Name 1", y= "Name 2", color = "Name 1"))
+g
+g <- g + geom_col()
+g
+
+
+
 
